@@ -18,6 +18,6 @@ jobs:
       - name: Deploy static site to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: homevault-webapp
+          app-name: homevault-webapp-ahhmewfuegdebjgf
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISH_PROFILE }}
           package: .
