@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — HomeVault</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo-mark">🏠</div>
+        <div class="logo-text">Home<span>Vault</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="support.html">Support</a>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="hero-badge">Help Center</div>
+    <h1>How can we help?</h1>
+    <p>Get answers to common questions about HomeVault or contact us directly.</p>
+</div>
+
+<div class="container">
+    <div class="contact-grid">
+        <div class="contact-card">
+            <div class="contact-card-icon">📧</div>
+            <h3>Email Support</h3>
+            <p>Questions about setup, login, sync, or general usage.</p>
+            <a href="mailto:support@homevault.app">support@homevault.app</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-card-icon">🔒</div>
+            <h3>Privacy Requests</h3>
+            <p>Questions about account deletion, data export, or privacy.</p>
+            <a href="mailto:privacy@homevault.app">privacy@homevault.app</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-card-icon">🐛</div>
+            <h3>Report a Bug</h3>
+            <p>Found a problem? Send us details and we will investigate.</p>
+            <a href="mailto:bugs@homevault.app">bugs@homevault.app</a>
+        </div>
+    </div>
+
+    <div class="faq-title">Frequently Asked Questions</div>
+    <div class="faq-subtitle">A few quick answers to the most common HomeVault questions.</div>
+
+    <div class="faq-group">
+        <div class="faq-group-title">Account & Access</div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                How do I create an account?
+                <span class="faq-chevron">▾</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    Download HomeVault, choose create account, and follow the verification steps in the app.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What if I forgot my password?
+                <span class="faq-chevron">▾</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    Use the password reset option on the login screen and follow the verification instructions sent to your email.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-group">
+        <div class="faq-group-title">Inventory & Records</div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                What can I store in HomeVault?
+                <span class="faq-chevron">▾</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    You can store inventory items, receipts, photos, warranties, property details, maintenance tasks, insurance records, and claim-related notes.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Does HomeVault support desktop and mobile?
+                <span class="faq-chevron">▾</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    Yes. HomeVault is designed to work across mobile and desktop so capture can happen on the go and management can happen on a larger screen.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-group">
+        <div class="faq-group-title">Claims & Insurance</div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Is HomeVault an insurance company?
+                <span class="faq-chevron">▾</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    No. HomeVault is a documentation and organization tool that helps you prepare records for your own insurer or warranty provider.
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+                Can I use HomeVault for claims documentation?
+                <span class="faq-chevron">▾</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-inner">
+                    Yes. HomeVault is designed to help you organize item details, photos, receipts, and notes that can support a claim workflow.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 HomeVault · <a href="index.html">Home</a> · <a href="privacy-policy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+</footer>
+
+<script>
+    function toggleFaq(button){
+        const item = button.parentElement;
+        item.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>
