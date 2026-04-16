@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeVault — Your Home, Fully Documented</title>
-    <meta name="description" content="HomeVault helps you organize home inventory, receipts, warranties, maintenance, and insurance-ready records across mobile and desktop.">
+    <meta name="description" content="HomeVault helps you organize home inventory, receipts, warranties, maintenance, claims, and property records across mobile and desktop.">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -23,8 +24,9 @@
 
         <div class="nav-links" id="navLinks">
             <a href="#features">Features</a>
-            <a href="#how">How It Works</a>
             <a href="#screens">Screens</a>
+            <a href="#claims">Claims</a>
+            <a href="#property">Property</a>
             <a href="#availability">Platforms</a>
             <a href="support.html">Support</a>
             <a href="privacy-policy.html">Privacy</a>
@@ -39,91 +41,26 @@
             <div class="hero-badge">Built for organized homeowners</div>
             <h1>Your home,<br><em>fully documented.</em></h1>
             <p>
-                HomeVault helps you organize belongings, receipts, warranties, maintenance,
-                room photos, and claim-ready records across mobile and desktop.
+                HomeVault helps you track belongings, store receipts, manage warranties,
+                organize claims, record room walkthroughs, and keep your property records ready
+                across mobile and desktop.
             </p>
 
             <div class="hero-actions">
                 <a href="#download" class="btn btn-primary">Download HomeVault</a>
-                <a href="#features" class="btn btn-secondary">Explore Features</a>
+                <a href="#screens" class="btn btn-secondary">Explore Screens</a>
             </div>
 
             <div class="hero-trust">
-                <div class="trust-item">
-                    <span class="trust-icon">🧾</span>
-                    <span>Receipts & photos</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-icon">🛡️</span>
-                    <span>Claim-ready records</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-icon">⏰</span>
-                    <span>Warranty reminders</span>
-                </div>
+                <div class="trust-item"><span class="trust-icon">🧾</span><span>Receipts & photos</span></div>
+                <div class="trust-item"><span class="trust-icon">🛡️</span><span>Claim-ready records</span></div>
+                <div class="trust-item"><span class="trust-icon">🏠</span><span>Property tracking</span></div>
             </div>
         </div>
 
         <div class="hero-visual fade-up">
-            <div class="hero-window">
-                <div class="window-top">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                </div>
-
-                <div class="hero-summary">
-                    <div class="summary-card summary-blue">
-                        <div class="summary-label">Items tracked</div>
-                        <div class="summary-value">47</div>
-                    </div>
-                    <div class="summary-card summary-green">
-                        <div class="summary-label">Estimated value</div>
-                        <div class="summary-value">$84k</div>
-                    </div>
-                </div>
-
-                <div class="hero-item">
-                    <div class="hero-item-icon icon-blue">📺</div>
-                    <div class="hero-item-info">
-                        <div class="hero-item-name">Samsung 65" QLED TV</div>
-                        <div class="hero-item-sub">Electronics · Model tracked · Receipt attached</div>
-                    </div>
-                    <div class="hero-pill pill-green">Warranty</div>
-                </div>
-
-                <div class="hero-item">
-                    <div class="hero-item-icon icon-orange">🌀</div>
-                    <div class="hero-item-info">
-                        <div class="hero-item-name">Carrier HVAC Unit</div>
-                        <div class="hero-item-sub">Maintenance due soon · Filter reminder</div>
-                    </div>
-                    <div class="hero-pill pill-orange">Reminder</div>
-                </div>
-
-                <div class="hero-item">
-                    <div class="hero-item-icon icon-green">🧾</div>
-                    <div class="hero-item-info">
-                        <div class="hero-item-name">Receipt + AI estimate</div>
-                        <div class="hero-item-sub">Claim-ready documentation for fast access</div>
-                    </div>
-                    <div class="hero-pill pill-blue">AI Assist</div>
-                </div>
-
-                <div class="hero-bottom-grid">
-                    <div class="mini-stat">
-                        <div class="mini-stat-value">3</div>
-                        <div class="mini-stat-label">Claims</div>
-                    </div>
-                    <div class="mini-stat">
-                        <div class="mini-stat-value">9</div>
-                        <div class="mini-stat-label">Warranties</div>
-                    </div>
-                    <div class="mini-stat">
-                        <div class="mini-stat-value">12</div>
-                        <div class="mini-stat-label">Tasks</div>
-                    </div>
-                </div>
+            <div class="hero-shot-card">
+                <img src="assets/images/dashboard.png" class="hero-shot" alt="HomeVault dashboard">
             </div>
         </div>
     </div>
@@ -135,117 +72,180 @@
             <div class="section-label">Features</div>
             <h2 class="section-title">Everything your home needs in one place</h2>
             <p class="section-sub">
-                HomeVault combines inventory tracking, warranty reminders, maintenance planning,
-                receipts, insurance details, and property records in one clean system.
+                HomeVault combines inventory tracking, insurance organization, claims,
+                room walkthroughs, reports, recalls, and property management in one system.
             </p>
         </div>
 
         <div class="feature-grid">
             <article class="feature-card fade-up">
-                <div class="feature-icon bg-blue">📷</div>
-                <h3>Photos & Item Records</h3>
-                <p>Capture photos, model numbers, serial numbers, purchase price, and location for every item you care about.</p>
+                <div class="feature-icon bg-blue">📦</div>
+                <h3>Item inventory</h3>
+                <p>Add items with price, category, purchase date, receipt, barcode, warranty, and insurance coverage details.</p>
             </article>
 
             <article class="feature-card fade-up">
-                <div class="feature-icon bg-green">🧾</div>
-                <h3>Receipt Scanning</h3>
-                <p>Use AI-assisted receipt capture to speed up item entry and keep proof of purchase organized.</p>
+                <div class="feature-icon bg-green">🛡️</div>
+                <h3>Insurance records</h3>
+                <p>Keep provider details, policies, claims phone numbers, and linked home coverage records together.</p>
             </article>
 
             <article class="feature-card fade-up">
-                <div class="feature-icon bg-orange">⏰</div>
-                <h3>Warranty Alerts</h3>
-                <p>Track warranty dates, provider details, and reminders so coverage does not quietly expire.</p>
+                <div class="feature-icon bg-orange">📋</div>
+                <h3>Claims workflow</h3>
+                <p>Create claims, attach items, export PDF documentation, and prepare insurer-ready evidence.</p>
             </article>
 
             <article class="feature-card fade-up">
                 <div class="feature-icon bg-purple">🏠</div>
-                <h3>Property Tracking</h3>
-                <p>Store home purchase details, improvements, maintenance, insurance links, and adjusted basis records.</p>
+                <h3>Property tracking</h3>
+                <p>Track homes, improvements, cost basis, estimated gain, and related insurance links.</p>
             </article>
 
             <article class="feature-card fade-up">
-                <div class="feature-icon bg-red">🛡️</div>
-                <h3>Claims Support</h3>
-                <p>Keep receipts, photos, values, and notes together so you can respond faster after loss or damage.</p>
+                <div class="feature-icon bg-red">🚨</div>
+                <h3>Emergency mode</h3>
+                <p>Generate an emergency inventory snapshot and access disaster-recovery guidance from your phone.</p>
             </article>
 
             <article class="feature-card fade-up">
-                <div class="feature-icon bg-teal">💻</div>
-                <h3>Mobile + Desktop</h3>
-                <p>Capture information on your phone and manage everything comfortably from a larger desktop screen.</p>
+                <div class="feature-icon bg-teal">🎥</div>
+                <h3>Room walkthroughs</h3>
+                <p>Document rooms with videos and visual evidence that supports inventory and future claims.</p>
             </article>
         </div>
     </div>
 </section>
 
-<section class="section" id="how">
-    <div class="container">
-        <div class="section-head center fade-up">
-            <div class="section-label">How it works</div>
-            <h2 class="section-title">A simple workflow for protecting your records</h2>
-            <p class="section-sub narrow">
-                Create records once, keep them organized, and pull them up quickly when repair,
-                replacement, or claim time comes.
-            </p>
-        </div>
-
-        <div class="steps-grid">
-            <div class="step-card fade-up">
-                <div class="step-num">1</div>
-                <h3>Add Items</h3>
-                <p>Create item records with photos, categories, model numbers, receipts, and purchase details.</p>
-            </div>
-
-            <div class="step-card fade-up">
-                <div class="step-num">2</div>
-                <h3>Track Coverage</h3>
-                <p>Store warranty details, maintenance schedules, insurer links, and renewal information in one place.</p>
-            </div>
-
-            <div class="step-card fade-up">
-                <div class="step-num">3</div>
-                <h3>Stay Prepared</h3>
-                <p>Access organized records and supporting evidence when something breaks, expires, or must be claimed.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section section-soft" id="screens">
+<section class="section" id="screens">
     <div class="container">
         <div class="section-head fade-up">
-            <div class="section-label">Screens</div>
-            <h2 class="section-title">Clean on desktop. Practical on mobile.</h2>
+            <div class="section-label">Core screens</div>
+            <h2 class="section-title">Fast entry on mobile. Easy review everywhere.</h2>
             <p class="section-sub">
-                HomeVault is designed so capture is easy on phone and review is easy on larger screens.
+                These screens show how HomeVault makes it practical to capture and maintain your home records.
             </p>
         </div>
 
-        <div class="screens-grid">
+        <div class="screens-grid screens-grid-3">
             <div class="screen-card fade-up">
-                <div class="screen-placeholder">
-                    Desktop Dashboard Preview
-                </div>
-                <h3>Desktop overview</h3>
-                <p>Review value, items, claims, and maintenance in one place.</p>
+                <img src="assets/images/additem.png" class="screen-img phone" alt="Add item screen">
+                <h3>Add items</h3>
+                <p>Create item records with receipt, barcode, purchase details, warranty, and insurance coverage.</p>
             </div>
 
             <div class="screen-card fade-up">
-                <div class="screen-placeholder phone">
-                    Mobile Item Capture
-                </div>
-                <h3>Fast mobile entry</h3>
-                <p>Add receipts, photos, and videos while walking through your home.</p>
+                <img src="assets/images/home-property.png" class="screen-img phone" alt="Property detail screen">
+                <h3>Property detail</h3>
+                <p>Track value, gain, purchase date, insurance links, and improvement history for each property.</p>
             </div>
 
             <div class="screen-card fade-up">
-                <div class="screen-placeholder">
-                    Property + Insurance View
-                </div>
-                <h3>Property records</h3>
-                <p>Keep improvements, policies, and home details together for the long term.</p>
+                <img src="assets/images/insurancepolicy.png" class="screen-img phone" alt="Insurance policy screen">
+                <h3>Insurance policy</h3>
+                <p>Review policy information, provider details, and related records in a clean policy view.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft" id="claims">
+    <div class="container">
+        <div class="section-head fade-up">
+            <div class="section-label">Claims</div>
+            <h2 class="section-title">A clean workflow for documenting claims</h2>
+            <p class="section-sub">
+                HomeVault helps you create, review, and export claim information without digging through scattered notes and receipts.
+            </p>
+        </div>
+
+        <div class="screens-grid screens-grid-3">
+            <div class="screen-card fade-up">
+                <img src="assets/images/claims.png" class="screen-img phone" alt="Claims list screen">
+                <h3>Claims overview</h3>
+                <p>See totals, open claims, and value at a glance from a dedicated claims dashboard.</p>
+            </div>
+
+            <div class="screen-card fade-up">
+                <img src="assets/images/claimdetailtop.png" class="screen-img phone" alt="Claim detail screen top">
+                <h3>Claim details</h3>
+                <p>Store insurer, claim number, phone, dates, notes, and claim status in one place.</p>
+            </div>
+
+            <div class="screen-card fade-up">
+                <img src="assets/images/claimdetailbottom.png" class="screen-img phone" alt="Claim detail actions screen">
+                <h3>Claim actions</h3>
+                <p>Export to PDF, email the insurer, and manage claim items from the same workflow.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="property">
+    <div class="container">
+        <div class="section-head fade-up">
+            <div class="section-label">Property</div>
+            <h2 class="section-title">Built for long-term property records</h2>
+            <p class="section-sub">
+                Go beyond item lists with home purchase details, improvements, linked insurance, and edit flows that stay organized.
+            </p>
+        </div>
+
+        <div class="screens-grid screens-grid-3">
+            <div class="screen-card fade-up">
+                <img src="assets/images/editproperty.png" class="screen-img phone" alt="Edit property screen">
+                <h3>Edit property</h3>
+                <p>Maintain core home details including nickname, address, city, state, and purchase values.</p>
+            </div>
+
+            <div class="screen-card fade-up">
+                <img src="assets/images/addimprovements.png" class="screen-img phone" alt="Add improvement screen">
+                <h3>Add improvements</h3>
+                <p>Track capital improvements with amount, contractor, date, category, and notes.</p>
+            </div>
+
+            <div class="screen-card fade-up">
+                <img src="assets/images/addinsuranceprovider.png" class="screen-img phone" alt="Add insurance provider screen">
+                <h3>Link providers</h3>
+                <p>Add and connect insurance providers directly from the property detail experience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft" id="more">
+    <div class="container">
+        <div class="section-head fade-up">
+            <div class="section-label">More tools</div>
+            <h2 class="section-title">Special modes and supporting tools</h2>
+            <p class="section-sub">
+                Beyond inventory and claims, HomeVault includes room walkthroughs, reports, recalls, and emergency snapshots.
+            </p>
+        </div>
+
+        <div class="screens-grid screens-grid-4">
+            <div class="screen-card fade-up">
+                <img src="assets/images/roomwalkthrough.png" class="screen-img phone" alt="Room walkthrough screen">
+                <h3>Room walkthroughs</h3>
+                <p>Record and organize room-level videos that support visual home documentation.</p>
+            </div>
+
+            <div class="screen-card fade-up">
+                <img src="assets/images/reports.png" class="screen-img phone" alt="Reports screen">
+                <h3>Reports</h3>
+                <p>Generate useful records for review, planning, and insurance documentation.</p>
+            </div>
+
+            <div class="screen-card fade-up">
+                <img src="assets/images/recalls.png" class="screen-img phone" alt="Recalls screen">
+                <h3>Recalls</h3>
+                <p>Review recall-related information for tracked products and household items.</p>
+            </div>
+
+            <div class="screen-card fade-up">
+                <img src="assets/images/emergencymodeoptions.png" class="screen-img phone" alt="Emergency mode screen">
+                <h3>Emergency mode</h3>
+                <p>Access an emergency workflow for fast inventory snapshots and recovery preparation.</p>
             </div>
         </div>
     </div>
@@ -256,7 +256,9 @@
         <div class="section-head fade-up">
             <div class="section-label">Platforms</div>
             <h2 class="section-title">Available where you need it</h2>
-            <p class="section-sub">Update the buttons below with your live store links when you are ready.</p>
+            <p class="section-sub">
+                Use HomeVault across desktop and mobile. Update these buttons with your live store links when ready.
+            </p>
         </div>
 
         <div class="platform-grid">
@@ -268,13 +270,13 @@
 
             <div class="platform-card fade-up">
                 <h3>Android</h3>
-                <p>Capture receipts, photos, and room videos directly from your Android device.</p>
+                <p>Capture receipts, photos, videos, and property records directly from your Android device.</p>
                 <a href="#" aria-label="Google Play link">Google Play — coming soon</a>
             </div>
 
             <div class="platform-card fade-up">
                 <h3>iPhone</h3>
-                <p>Manage your inventory and home records from your iPhone anywhere.</p>
+                <p>Manage your home records, claims, and inventory from your iPhone anywhere.</p>
                 <a href="#" aria-label="Apple App Store link">App Store — coming soon</a>
             </div>
         </div>
@@ -286,7 +288,7 @@
         <div class="cta-copy">
             <div class="section-label light">Download</div>
             <h2>Ready to build your home record vault?</h2>
-            <p>Start organizing receipts, warranties, photos, property records, and claim-ready documentation with HomeVault.</p>
+            <p>Start organizing receipts, warranties, claims, room videos, and property records with HomeVault.</p>
         </div>
 
         <div class="cta-actions">
@@ -304,15 +306,15 @@
                     <div class="logo-mark">🏠</div>
                     <div class="logo-text">Home<span>Vault</span></div>
                 </div>
-                <p>Home inventory, warranties, maintenance, and claim-ready records — organized across mobile and desktop.</p>
+                <p>Home inventory, claims, property, insurance, and maintenance records — organized across mobile and desktop.</p>
             </div>
 
             <div class="footer-col">
                 <h4>Product</h4>
                 <a href="#features">Features</a>
-                <a href="#how">How It Works</a>
                 <a href="#screens">Screens</a>
-                <a href="#availability">Platforms</a>
+                <a href="#claims">Claims</a>
+                <a href="#property">Property</a>
             </div>
 
             <div class="footer-col">
