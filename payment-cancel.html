@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout Cancelled — HomeGuard</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --primary-blue: #185FA5;
+    --dark-blue: #0C447C;
+    --light-blue: #E6F1FB;
+    --text-dark: #0C447C;
+    --text-muted: #5F5E5A;
+    --page-bg: #F8FAFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--page-bg);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    line-height: 1.6;
+  }
+  .card {
+    background: white;
+    max-width: 520px;
+    width: 100%;
+    padding: 48px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(12, 68, 124, 0.08);
+    text-align: center;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    background: var(--light-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+  }
+  .icon svg {
+    width: 40px;
+    height: 40px;
+    stroke: var(--primary-blue);
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  h1 {
+    font-size: 28px;
+    color: var(--dark-blue);
+    margin-bottom: 12px;
+  }
+  .subtitle {
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .info {
+    background: var(--light-blue);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .info h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+  }
+  .info p {
+    font-size: 14px;
+    color: var(--text-dark);
+  }
+  .help {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 16px;
+  }
+  .help a {
+    color: var(--primary-blue);
+    text-decoration: none;
+  }
+  .help a:hover { text-decoration: underline; }
+  .brand {
+    margin-top: 32px;
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .reason-banner {
+    background: #FFF7E6;
+    color: #8A6D00;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 24px;
+    display: none;
+  }
+  .reason-banner.show { display: block; }
+</style>
+</head>
+<body>
+<main class="card" role="main">
+  <div class="icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </div>
+
+  <h1>Checkout Cancelled</h1>
+  <p class="subtitle">No payment was made. Your trial is unaffected.</p>
+
+  <div id="reasonBanner" class="reason-banner">
+    Your activation link expired. Open the app and tap <strong>Activate</strong> again to start a new checkout.
+  </div>
+
+  <div class="info">
+    <h2>What now?</h2>
+    <p>Return to the HomeGuard app and tap <strong>Activate</strong> when you're ready. You can use your free trial in the meantime.</p>
+  </div>
+
+  <p class="help">
+    Questions? Email <a href="mailto:support@homeinventoryhq.com">support@homeinventoryhq.com</a>
+  </p>
+
+  <p class="brand">HomeGuard by HomeInventoryHQ</p>
+</main>
+
+<script>
+  // Show the "expired" banner if we got here from an expired token
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("reason") === "expired") {
+    document.getElementById("reasonBanner").classList.add("show");
+  }
+</script>
+</body>
+</html>
