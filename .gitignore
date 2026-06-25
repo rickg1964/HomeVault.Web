@@ -1,0 +1,11 @@
+# Build tooling — kept local so Azure SWA (Oryx) doesn't try to build this as a Node app
+node_modules/
+package.json
+package-lock.json
+scripts/
+
+# Local image-optimization backup of original (pre-resize) images
+_images_backup_orig/
+
+# Editor / IDE
+.vs/
